@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- https://enel-rj.simuladordeconsumo.com.br/ambiente/quarto
+    
+        Colocar p adicionar em uma lista vários produtos e calcular o preço total no final do mês;
+
+        Colocar a opção de colocar a ddp de forma opcional e calcular a resistência e intensidade da corrente elétrica;
+
+        Tentar usar option e select
+    
+    -->
+
+    <header>
+      <h1>Quanto custará minha conta de luz?</h1>
+    </header>
+
+    <section>
+      <div class="container">
+        <h2>Digite as informações sobre o aparelho</h2>
+        <div>
+          Quantidade <br />
+          <input type="number" id="qtdtxt" />
+        </div>
+
+        <br />
+
+        <div>
+          Tempo de uso por dia (hora) <br />
+          <input type="number" id="tempo" />
+        </div>
+
+        <br />
+
+        <div>
+          Potência (W) <br />
+          <input type="number" id="pot" />
+        </div>
+
+        <br />
+
+        <div>
+          Preço do KWh (R$) <br />
+          <input type="number" id="preçoDoKWh" />
+        </div>
+
+        <br />
+
+        <!-- Opcional:
+        <div>
+          Tensão elétrica (voltagem)<br />
+          <input type="number" id="ddp" />
+        </div>
+        <br /> -->
+
+        <div>
+          <!-- <button onclick="adicionar()">Adicionar</button> -->
+          <button onclick="calcular()">Calcular</button> <br />
+          <br />
+          <p id="res"></p>
+        </div>
+      </div>
+
+
+    </section>
+
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
